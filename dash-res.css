@@ -1,0 +1,255 @@
+:root {
+  --color-white: #ffffff;
+  --color-light: #f0eff5;
+  --color-dark: #27282f;
+  --color-gen: #10c98f;
+  --color-gray-light: #86848c;
+  --color-gray-dark: #56555e;
+  --color-primary: rgb(71, 7, 234);
+  --color-success: rgb(34, 202, 75);
+  --color-danger: rgb(225, 67, 54);
+  --color-warning: rgb(234, 181, 7);
+  --color-purple: rgb(160, 99, 245);
+
+  --color-primary-light: rgba(71, 7, 234, 0.2);
+  --color-success-light: rgba(34, 202, 75, 0.2);
+  --color-danger-light: rgba(225, 67, 54, 0.2);
+  --color-warning-light: rgba(234, 181, 7, 0.2);
+  --color-purple-light: rgba(160, 99, 245, 0.2);
+
+  --card-padding: 1.6rem;
+  --padding-1: 1rem;
+  --padding-2: 8px;
+
+  --card-border-radius: 1.6rem;
+  --border-radius-1: 1rem;
+  --border-radius-2: 8px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+  outline: 0;
+  appearance: none;
+  border: 0;
+  text-decoration: none;
+}
+html {
+  font-size: 12px;
+}
+body {
+  background-color: var(--color-light);
+  min-height: 100vh;
+  color: var(--color-dark);
+}
+img {
+  width: 100%;
+}
+
+h1 {
+  font-size: 2.2rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+h3 {
+  font-size: 1.2rem;
+}
+h4 {
+  font-size: 1rem;
+}
+h5 {
+  font-size: 0.86rem;
+  font-weight: 500;
+}
+h6 {
+  font-size: 0.76rem;
+}
+p {
+  font-size: 0.86rem;
+  color: var(--color-gray-dark);
+}
+
+small {
+  font-weight: 300;
+  font-size: 0.77rem;
+}
+.text-muted {
+  color: var(--color-gray-light);
+}
+
+.primary {
+  color: var(--color-primary);
+}
+
+.danger {
+  color: var(--color-danger);
+}
+
+.success {
+  color: var(--color-success);
+}
+.purple {
+  color: var(--color-purple);
+}
+
+.bg-danger {
+  background: var(--color-danger);
+  box-shadow: 0 0.8rem 0.8rem var(--color-danger-light);
+}
+
+.bg-success {
+  background: var(--color-success);
+  box-shadow: 0 0.8rem 0.8rem var(--color-success-light);
+}
+.bg-purple {
+  background: var(--color-purple);
+  box-shadow: 0 0.8rem 0.8rem var(--color-purple-light);
+}
+.bg-primary {
+  background: var(--color-primary);
+  box-shadow: 0 0.8rem 0.8rem var(--color-primary-light);
+}
+.bg-dark {
+  background: #27282f;
+  box-shadow: 0 0.8rem 0.8rem rgba(0, 0, 0, 0.2);
+}
+.bg-purple-light {
+  background: var(--color-purple-light);
+}
+
+.bg-danger-light {
+  background: var(--color-danger-light);
+}
+
+.bg-primary-light {
+  background: var(--color-primary-light);
+}
+.bg-success-light {
+  background: var(--color-success-light);
+}
+
+@media screen and (max-width: 1024px) {
+  nav .search-bar {
+    display: none;
+  }
+  nav .profile-area {
+    gap: 2rem;
+  }
+  nav .profile-area button#menu-btn {
+    display: inline;
+    background: transparent;
+    color: var(--color-dark);
+  }
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  main aside {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    z-index: 3;
+    background: var(--color-white);
+    width: 22rem;
+    height: 100vh;
+    box-shadow: 2rem 0 2rem var(--color-primary-light);
+    display: none;
+    animation: showNavbar 500ms ease forwards;
+  }
+  @keyframes showNavbar {
+    to {
+      left: 0;
+    }
+  }
+
+  main aside button#close-btn {
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 4;
+    background: transparent;
+    color: var(--color-dark);
+  }
+  button:hover {
+    cursor: pointer;
+  }
+
+  main aside .side-nav {
+    margin-top: 4rem;
+  }
+
+  main aside .update {
+    display: none;
+  }
+
+  main section.middle .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  main canvas {
+    margin: 3rem 0 1rem;
+  }
+
+  main section.right .recent-transactions {
+    margin-top: 3rem;
+  }
+}
+
+/* MEADIA SCREEN OF MIBLE PHONE */
+
+@media screen and (max-width: 600px) {
+  nav .profile-area {
+    gap: 6rem;
+  }
+  nav .profile-area .profile {
+    margin: 0 1rem;
+  }
+
+  nav .profile h5,
+  nav .profile span {
+    display: none;
+  }
+  main section.middle .dashbord .top-1 h2 {
+    padding: 0;
+  }
+  main section.middle .dashbord .bottom-1 {
+    padding: 0;
+  }
+  main section.middle .dashbord .option {
+    margin: 0;
+  }
+
+  main section.middle .cards {
+    grid-template-columns: 1fr;
+  }
+
+  main section.middle .header {
+    justify-content: space-around;
+    gap: 1rem;
+  }
+
+  main section.middle .monthly-payment {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 3rem;
+    gap: 1.4rem;
+  }
+
+  main .recent-transactions .transaction:hover {
+    transform: none;
+  }
+
+  main .recent-transactions {
+    margin-top: 2rem;
+    background: none;
+    border-radius: none;
+    padding: none;
+  }
+}

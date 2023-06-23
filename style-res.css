@@ -1,0 +1,273 @@
+@media (max-width: 768px) {
+  .bi {
+    display: initial;
+  }
+  .section-p1 {
+    padding: 40px 40px;
+  }
+
+  .btn-2 {
+    display: initial;
+    align-items: center;
+    /* margin-left: 35px; */
+    justify-content: center;
+    padding: 0.7rem 26px;
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+
+  .btn-1 {
+    display: none;
+  }
+
+  .header {
+    height: 80vh;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    position: fixed;
+    top: -700px;
+    right: 0;
+    left: 0;
+    width: 100%;
+    background: #222;
+    padding: 20px 0;
+    transition: 0.5s;
+  }
+
+  nav li {
+    margin-bottom: 1.5rem;
+  }
+
+  nav ul.active {
+    top: 0px;
+  }
+  nav ul li {
+    padding-right: 36px;
+    position: relative;
+  }
+
+  #close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: #fff;
+    font-size: 27px;
+    display: initial;
+  }
+  #home-txt {
+    margin-top: 5rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+
+  .home-text {
+    width: 100%;
+  }
+
+  .home-text h3 {
+    font-size: 23px;
+  }
+  .home-text h1 {
+    font-size: 40px;
+  }
+  .home-text p {
+    font-size: 18px;
+  }
+
+  .abt {
+    width: 100%;
+  }
+  .abt-txt {
+    width: 100%;
+    padding: 50px 0 0 0;
+    order: 2;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .abt-contain {
+    flex-direction: column;
+    text-align: center;
+  }
+  .abt h1 {
+    font-size: 35px;
+    color: #222;
+    margin: 13px 0;
+  }
+  .abt-img img {
+    margin-top: 13px;
+  }
+
+  .abt-sec {
+    align-items: center;
+    justify-content: center;
+    background: #fefbe9;
+  }
+
+  .savis-heading p {
+    font-size: 10px;
+    margin: 18px 0;
+  }
+
+  .savis-heading h1 {
+    font-size: 33px;
+  }
+  .reveiw .box p {
+    margin: 12px 0;
+  }
+
+  .heading {
+    margin: 0%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .blog-heading h1 {
+    font-size: 36px;
+  }
+
+  .blog-card {
+    width: 20%;
+    min-width: 300px;
+    justify-content: center;
+    margin: 8px 15px;
+  }
+
+  .blog-card img {
+    width: 300px;
+  }
+
+  #contact {
+    flex-direction: column;
+  }
+
+  #contact .Address h2,
+  .form-details form {
+    font-size: 17px;
+  }
+
+  #contact .Address {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #contact .Address h1,
+  .form-details form h1 {
+    font-size: 35px;
+  }
+
+  #contact .Address h3 {
+    font-size: 18px;
+  }
+
+  #contact .Address li p {
+    font-size: 18px;
+  }
+
+  #contact .map {
+    width: 100%;
+    display: flex;
+  }
+  footer {
+    width: 70%;
+  }
+}
+
+@media (max-width: 477px) {
+  .section-p1 {
+    padding: 20px;
+  }
+
+  nav.sticky {
+    padding: 5px 20px;
+    background: #26b29f;
+  }
+  #home-txt {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    /* text-align: center; */
+  }
+  .home-text h3 {
+    font-size: 18px;
+  }
+  .home-text h1 {
+    font-size: 30px;
+  }
+  .home-text p {
+    font-size: 12px;
+  }
+
+  .quality-card {
+    width: 150px;
+    height: 360px;
+   margin: 5px;
+  }
+
+  button {
+    margin-left: 0;
+    font-size: 13px;
+  }
+
+  .abt-img img {
+    width: 100%;
+  }
+
+  .abt h1 {
+    font-size: 25px;
+  }
+  .savis-contain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .blog-card p {
+    font-size: 15px;
+    padding: 10px 6px;
+  }
+  .blog-contain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  .reveiw .box {
+    height: 450px;
+    padding: 1.5rem;
+  }
+  .reveiw .box p {
+    font-size: 15px;
+  }
+
+  .savis-heading h1 {
+    font-size: 25px;
+  }
+  .savis-card p {
+    font-size: 15px;
+  }
+
+  #contact .Address h1,
+  .form-details form h1 {
+    font-size: 25px;
+  }
+
+  #contact .Address p {
+    font-size: 15px;
+  }
+  footer {
+    width: 100%;
+  }
+}
