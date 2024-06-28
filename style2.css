@@ -102,9 +102,8 @@ form div {
 #rememberme {
   accent-color: #10c98f;
 }
-button {
-  /* padding: 10px 2rem; */
-  margin: 40px 0;
+.button {
+  margin: 10px 0;
   width: 100%;
   height: 45px;
   background-color: #10c98f;
